@@ -6,7 +6,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "A Design Space for Intelligent and Interactive Writing Assistants",
+  title: "A Design Space for In-IDE HAX",
   description: "", // #TODO
 };
 
