@@ -38,7 +38,7 @@ import {
 import TaskPage from "./paper";
 import next from "next";
 
-const TITLE = "A Design Space for Intelligent and Interactive Writing Assistants";
+const TITLE = "A Design Space for In-IDE HAX";
 
 
 const PAPER_URL = "https://arxiv.org/html/2410.08676";
