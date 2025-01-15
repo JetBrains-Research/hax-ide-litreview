@@ -3,7 +3,7 @@ import {
     PageHeader,
     PageHeaderDescription,
     PageHeaderHeading,
-} from "./components/page-header";
+} from "../components/page-header";
 
 const Headline = () => (
     <PageHeader className="page-header pb-12 pt-4">
@@ -12,6 +12,10 @@ const Headline = () => (
           Welcome to our Human AI Experience team! ...
         </p>
 
+        <p className="pb-4"><strong>Our main topics of interest</strong>:</p>
+        <p className="pb-5">Human-Computer Interaction (HCI) for AI ...</p>
+        <p className="pb-5">Measurement and Evaluation Techniques ...</p>
+        <p className="pb-5">User-Centered Design (UCD) and Co-Design ...</p>
       </div>
     </PageHeader>
 );

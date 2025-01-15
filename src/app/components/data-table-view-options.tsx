@@ -13,7 +13,7 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 
-import structuredFields from "../papers/structured_fields.json";
+import structuredFields from "@/app/in-ide-review/papers/structured_fields.json";
 
 interface DataTableViewOptionsProps<TData> {
   table: Table<TData>;

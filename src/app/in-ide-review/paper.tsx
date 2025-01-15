@@ -4,11 +4,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { z } from "zod";
 
-import { columns } from "./components/columns";
-import { DataTable } from "./components/data-table";
-import { UserNav } from "./components/user-nav";
-import { paperSchema } from "./papers/schema";
-import data from "./papers/papers.json";
+import { columns } from "../components/columns";
+import { DataTable } from "../components/data-table";
+import { UserNav } from "../components/user-nav";
+import { paperSchema } from "@/app/in-ide-review/papers/schema";
+import data from "@/app/in-ide-review/papers/papers.json";
 
 export const metadata: Metadata = {
   title: "Tasks",

@@ -25,7 +25,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-import structuredFields from "../papers/structured_fields.json";
+import structuredFields from "@/app/in-ide-review/papers/structured_fields.json";
 
 import { DataTablePagination } from "./data-table-pagination"
 import { DataTableToolbar } from "./data-table-toolbar"

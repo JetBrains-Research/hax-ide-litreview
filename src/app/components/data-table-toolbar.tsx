@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { DataTableViewOptions } from "./data-table-view-options";
 
 // import { priorities, statuses } from "../data/data"
-import { groupedFieldsByCategory } from "../papers/schema";
+import { groupedFieldsByCategory } from "@/app/in-ide-review/papers/schema";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 

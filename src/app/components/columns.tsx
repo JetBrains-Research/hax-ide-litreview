@@ -5,8 +5,8 @@ import { ColumnDef } from "@tanstack/react-table";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 
-import structuredFields from "../papers/structured_fields.json";
-import { Paper } from "../papers/schema";
+import structuredFields from "@/app/in-ide-review/papers/structured_fields.json";
+import { Paper } from "@/app/in-ide-review/papers/schema";
 import { DataTableColumnHeader } from "./data-table-column-header";
 // import { DataTableRowActions } from "./data-table-row-actions"
 import Link from 'next/link'

@@ -3,13 +3,13 @@ import {
     PageHeader,
     PageHeaderDescription,
     PageHeaderHeading,
-} from "./components/page-header";
+} from "../components/page-header";
 
 const Headline = () => (
     <PageHeader className="page-header pb-12 pt-4">
       <div className="pt-4 font-sans">
         <p className="pb-4">
-          Welcome to our Human AI Experience team! ...
+          Our ongoing projects are:
         </p>
 
       </div>
