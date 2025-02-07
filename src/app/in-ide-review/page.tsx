@@ -55,7 +55,7 @@ interface Author {
 }
 
 const AUTHORS:Author[] = [
-  {"name": "Ilia Zakharov", "role": "Project leads", "affiliation": "JetBrains Research"}
+  {"name": "Ilia Zakharov", "role": "Senior Researcher", "affiliation": "JetBrains Research"}
 ];
 
 const AuthorHoverCard = (author: Author) => (

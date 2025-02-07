@@ -2,11 +2,12 @@ import { z } from "zod";
 import structuredFields from "./structured_fields.json";
 
 const defaultFields = {
-  Paper: z.string(),
-  URL: z.string(),
-  Year: z.number(),
+  Paper: z.string(),               // JSON uses "Title" instead of "Paper"
+  DOI: z.string(),                 // JSON uses "DOI" instead of "URL"
+  Date: z.number(),                // JSON uses "Date" instead of "Year"
   ID: z.string(),
-  Authors: z.string().optional(),
+  // JSON has Authors as an array, so update the type:
+  Authors: z.array(z.string()).optional(),
   Abstract: z.string().optional(),
 };
 

@@ -3,51 +3,20 @@ import json
 
 
 structured_field_data = [
-    {"name": "Writing Stage", "category": "task"},
-    {"name": "Writing Context", "category": "task"},
-    {"name": "Purpose", "category": "task"},
-    {"name": "Specificity", "category": "task"},
-    {"name": "Audience", "category": "task"},
-    {"name": "Demographic Profile - Design", "category": "user"},
-    {"name": "Demographic Profile - Evaluation", "category": "user"},
-    {"name": "System Output Preferences - Design", "category": "user"},
-    {"name": "System Output Preferences - Evaluation", "category": "user"},
-    {"name": "Relationship to System - Design", "category": "user"},
-    {"name": "Relationship to System - Evaluation", "category": "user"},
-    {"name": "User Capabilities - Design", "category": "user"},
-    {"name": "User Capabilities - Evaluation", "category": "user"},
-    {"name": "Data - Source", "category": "technology"},
-    {"name": "Data - Size", "category": "technology"},
-    {"name": "Model - Type", "category": "technology"},
-    {"name": "Model - External Resource Access", "category": "technology"},
-    {"name": "Learning - Problem", "category": "technology"},
-    {"name": "Learning - Algorithm", "category": "technology"},
-    {"name": "Learning - Training and Adaptation", "category": "technology"},
-    {"name": "Evaluation - Evaluator", "category": "technology"},
-    {"name": "Evaluation - Focus", "category": "technology"},
-    {"name": "Scalability", "category": "technology"},
-    {"name": "User - Steering the System", "category": "interaction"},
-    {"name": "User - Integrating System Output", "category": "interaction"},
-    {"name": "UI - Interface Paradigm", "category": "interaction"},
-    {"name": "UI - Layout", "category": "interaction"},
-    {"name": "UI - Visual Differentiation", "category": "interaction"},
-    {"name": "UI - Interaction Metaphor", "category": "interaction"},
-    {"name": "UI - Initiation", "category": "interaction"},
-    {"name": "System - Output Type", "category": "interaction"},
-    {"name": "System - Curation Type", "category": "interaction"},
-    {"name": "System - User Data Access", "category": "interaction"},
-    {"name": "Digital Infrastructure", "category": "ecosystem"},
-    {"name": "Social Factors", "category": "ecosystem"},
-    {"name": "Locale", "category": "ecosystem"},
-    {"name": "Access Model", "category": "ecosystem"},
-    {"name": "Norms & Rules", "category": "ecosystem"},
-    {"name": "Change Over Time", "category": "ecosystem"},
+    {"name": "Affiliation", "category": "affiliation"},
+    {"name": "Scope from our taxonomy", "category": "taxonomy"},
+    {"name": "Context", "category": "field"},
+#    {"name": "Form", "category": "Scope from our taxonomy"},
+#    {"name": "Quality", "category": "Scope from our taxonomy"},
+#    {"name": "Other", "category": "Scope from our taxonomy"},
+#    {"name": "Professional", "category": "Context"},
+#    {"name": "Educational", "category": "Context"},
 ]
 
 
-df = pd.read_csv("annotated_papers.csv")
+df = pd.read_csv("In-IDE_HAX.csv")
 
-necessary_fields = ['Paper', 'URL', 'Year']
+necessary_fields = ['Title', 'DOI', 'Date']
 other_fields = [ele for ele in df.columns if ele not in necessary_fields]
 
 for field in other_fields:
@@ -58,7 +27,7 @@ for field in structured_field_data:
     field['values'] = [{"value": ele, "label": ele} for ele in all_values]
 
 df['ID'] = [f"{i}" for i in range(len(df))]
-df.to_json("../src/app/papers/papers.json", orient="records", indent=4)
+df.to_json("../src/app/in-ide-review/papers/papers.json", orient="records", indent=4)
 
-with open("../src/app/papers/structured_fields.json", "w") as f:
+with open("../src/app/in-ide-review/papers/structured_fields.json", "w") as f:
     json.dump(structured_field_data, f, indent=4)
