@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Affiliation",
+        "category": "affiliation",
+        "values": [
+            {
+                "value": "Academia",
+                "label": "Academia"
+            },
+            {
+                "value": "Industry",
+                "label": "Industry"
+            }
+        ]
+    },
+    {
+        "name": "Scope from our taxonomy",
+        "category": "Taxonomy",
+        "values": [
+            {
+                "value": "Impact",
+                "label": "Impact"
+            },
+            {
+                "value": "Form",
+                "label": "Form"
+            },
+            {
+                "value": "Quality",
+                "label": "Quality"
+            },
+            {
+                "value": "Other",
+                "label": "Other"
+            }
+        ]
+    },
+    {
+        "name": "Context",
+        "category": "Field",
+        "values": [
+            {
+                "value": "Educational",
+                "label": "Educational"
+            },
+            {
+                "value": "Professional",
+                "label": "Professional"
+            }
+        ]
+    }
+]
